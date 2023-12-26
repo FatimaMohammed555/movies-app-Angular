@@ -1,0 +1,29 @@
+
+
+<div class="box mt-5">
+    <!-- <div class="row g-4" *ngIf="!loading"> -->
+    <div class="row g-4" *ngIf="!loading">
+      <div class="col-12 col-md-6">
+        <img src="assets/imgs/movie-1.png" alt="prod_img" srcset="" class="w-100">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="info">
+          <ul class="list-unstyled">
+            <li class="pb-4 fs-2"><strong>Title: </strong>{{data.title}}</li>
+            <li class="pb-4 fs-2"><strong>Year: </strong>{{data.year}}</li>
+            <li class="pb-4 fs-2"><strong>Runtime: </strong>{{data.runtime}}</li>
+            <li class="pb-4 fs-2"><strong>Rate: </strong>{{data.rating}}</li>
+            <li class="pb-4 fs-2"><strong>Description: </strong>{{data.plot}}</li>
+            <!-- <li class="pb-4 fs-2"><strong>Price: </strong>{{data.price}}</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <app-spinner *ngIf="loading"></app-spinner>
+    </div>
+  </div>
+
+
+
+
